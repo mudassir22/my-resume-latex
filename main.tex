@@ -1,0 +1,206 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%-------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+% ---- Packages ----
+\usepackage[letterpaper,
+  top=0.12in, bottom=0.35in,
+  left=0.35in, right=0.35in,
+  headheight=0pt, headsep=0pt, footskip=8pt]{geometry}
+\pagestyle{empty}
+
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{xurl}
+\usepackage{microtype}
+
+\setlength{\multicolsep}{-3pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\sloppy
+\emergencystretch=2em
+\renewcommand{\arraystretch}{0.95}
+\setlength{\topskip}{6pt}
+
+\titleformat{\section}
+  {\scshape\raggedright\normalsize\bfseries}
+  {}{0em}{}[\color{black}\titlerule]
+\titlespacing{\section}{0pt}{2pt}{2pt}
+
+\setlist[itemize]{leftmargin=*, itemsep=0pt, topsep=1pt, parsep=0pt, partopsep=0pt}
+\setlist[enumerate]{leftmargin=*, itemsep=0pt, topsep=1pt, parsep=0pt, partopsep=0pt}
+
+\pdfgentounicode=1
+
+% -------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\classesList}[4]{\item\small{#1 #2 #3 #4}}
+
+\newcommand{\resumeSubheading}[4]{%
+  \item
+  \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textbf{\small #2} \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}
+}
+
+\newcommand{\resumeSubSubheading}[2]{%
+  \item
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small #1} & \textit{\small #2} \\
+  \end{tabular*}
+}
+
+\newcommand{\resumeProjectHeading}[2]{%
+  \item
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \small #1 & \textbf{\small #2} \\
+  \end{tabular*}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+% -------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%
+
+\begin{document}
+\vspace*{-12pt}
+
+\begin{center}
+  {\Large \scshape Mudassir Raza} \\[0.5pt]
+  Delhi, India \\[0.5pt]
+  \small
+  \raisebox{-0.1\height}\faPhone\ +91-9540922201 ~
+  \href{mailto:iamudassiraza@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{iamudassiraza@gmail.com}} ~
+  \href{https://linkedin.com/in/mudassirraza22}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/mudassirraza22/}} ~
+  \href{https://github.com/mudassir22}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/mudassir22}}
+\end{center}
+
+\vspace{-1pt}
+{\small Software Developer with \textbf{4+ years} building high-performance C++ systems, real-time UIs, and centralized data pipelines for live production; experienced with IPC, Linux deployments, and performance tuning.}
+\vspace{-1pt}
+
+% ----------- EXPERIENCE -----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{\textbf{Quidich Innovation Labs} \textbar{} Mumbai, India}{Jan 2025 -- Present}
+{\textbf{Software Developer}}{}
+
+\resumeItemListStart
+
+\resumeItem{Designed and implemented \textbf{AQURACY Server} in \textbf{C++} using \textbf{Crow REST API}, aggregating \textbf{frame-level computer vision data} at \textbf{25 FPS}, streaming to UI for corrections, caching in \textbf{Redis} until validated, then persisting to \textbf{MongoDB} for durable storage.}
+
+\resumeItem{Built \textbf{AQURACY UI} using \textbf{ImGui} with unified \textbf{Player Tracking} and \textbf{Shot Tracker} modules, enabling operators to correct tracking errors and fire analytics stories (e.g., distance between players/fielders); reduced operators from \textbf{3 to 1--2} and improved tracking reliability by \textbf{40\%} in occlusion/overlap scenarios.}
+
+\resumeItem{Integrated \textbf{HyperView 2.0} (\textbf{Unreal Engine}) backend into the \textbf{V3 broadcast ecosystem} using \textbf{Python and FastAPI} to fire graphics stories to the \textbf{HyperView 2.0}. Successfully deployed during \textbf{IPL 2026}, delivering the system's USP: \textbf{real-time player tracking} embedded in graphics stories (e.g., six trajectories showing player's live location), enabling \textbf{25 FPS} real-time visualization rendering for production-critical broadcast overlays.}
+
+\resumeItem{Enhanced the \textbf{STIQY broadcast graphics platform} by consolidating multiple graphics control interfaces into a unified operator workflow, reducing graphics operation effort by \textbf{50\%} and improving production efficiency during live sporting events. Successfully deployed and validated during \textbf{IPL tournament} broadcasts and a \textbf{professional golf match}, achieving \textbf{85\%+ tracking accuracy} in production environments with real-time graphics rendering at \textbf{60 FPS} for seamless broadcast integration.}
+
+\resumeItemListEnd
+
+
+
+\resumeSubheading
+{\textbf{Satyam Software Solutions (S-CUBE)} \textbar{} Noida, India}{Oct 2022 -- Jan 2025}
+{\textbf{Software Engineer}}{}
+
+\resumeItemListStart
+
+\resumeItem
+{\textbf{DS24 - Automatic Fare Collection (AFC) Gate System}}
+{Contributed to middleware and UI development using C++, GTK 3.0, IPC, and OOP principles. Implemented inter-process communication modules supporting real-time gate operations and transaction processing across multiple system components.}
+
+\resumeItem
+{\textbf{NCMC Card Dispenser System}}
+{Developed backend modules in C++ for a National Common Mobility Card (NCMC) dispensing solution. Integrated payment workflows with Airtel services and contributed to reliable transaction processing and card issuance operations.}
+
+\resumeItem
+{\textbf{Electronic Paper Display (EPD) Management Platform}}
+{Developed backend services using Crow C++ and PostgreSQL to manage and monitor 100+ EPD devices. Contributed to a GTK-based desktop application enabling device configuration, content broadcasting, and real-time status monitoring.}
+
+\resumeItem
+{\textbf{Distributed Ticket Vending Machine (TVM) System}}
+{Developed backend components for a distributed ticket vending solution deployed across multiple metro environments. Built high-availability modules using C++, IPC, and OOP concepts, supporting multi-display operation, failover mechanisms, and concurrent payment processing.}
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading{{\textbf{LearnR}} $|$ \emph{HTML, CSS, JavaScript, AR.js}}{2022}
+\resumeItemListStart
+  \resumeItem{Co-developed an \textbf{Augmented Reality (AR)} learning platform using \textbf{marker-based AR detection}, rendering 3D models over physical markers in real-time via browser camera.}
+  \resumeItem{Built \textbf{four educational modules}—English (alphabets), Chemistry (molecules/bonds), Mathematics (shapes), Biology (body organs)—enabling interactive 3D visualization for immersive learning.}
+  \resumeItem{Implemented \textbf{AR.js} for marker tracking and 3D model rendering; engineered responsive UI with HTML/CSS/JS for cross-device compatibility.}
+\resumeItemListEnd
+
+\resumeProjectHeading{{\textbf{Tuneology}} $|$ \emph{HTML, CSS, JavaScript, AR.js, Web Audio API}}{2022}
+\resumeItemListStart
+  \resumeItem{Built an \textbf{AR-powered music isolation tool} that detects visual markers via camera and overlays 3D instrument models, enabling interactive exploration of musical tracks.}
+  \resumeItem{Implemented \textbf{instrument stem isolation} using Web Audio API, allowing users to listen to individual instruments (guitar, drums, vocals, piano) from a mixed song.}
+  \resumeItem{Engineered \textbf{marker-based AR detection} with AR.js for real-time 3D rendering; designed responsive frontend with HTML/CSS/JS for seamless cross-browser experience.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+% ----------- TECHNICAL SKILLS -----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{
+    \item{
+      \textbf{Languages}{: C++, Python, Shell Scripting} \\
+
+      \textbf{Core Concepts}{: Data Structures \& Algorithms, STL, OOPs, Design Patterns, Multithreading, Multiprocessing, IPC (Message Queues, Shared Memory), Semaphores, Mutexes} \\
+
+      \textbf{Technologies}{: Linux (Ubuntu, TinyCore), REST APIs, Microservices, FastAPI, Crow (C++), MongoDB, Redis, TCP/UDP, Socket programming, ZeroMQ, UART, USB, Serial Communication, Docker, CI/CD (GitHub Actions)} \\
+
+      \textbf{Tools \& Frameworks}{: Git, GDB, Valgrind, Makefiles, Meson, OpenGL, ImGui, OpenCV, GTK 3.0, Raspberry Pi, ESP32}
+    }
+  }
+\end{itemize}
+
+% ----------- EDUCATION -----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {G.B. Pant Government Engineering College}{Aug 2018 -- Aug 2022}
+    {B.Tech, Mechanical and Automation Engineering — \textbf{CGPA: 7.95/10}}{New Delhi}
+    
+\resumeSubHeadingListEnd
+
+\end{document}
