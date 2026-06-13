@@ -41,13 +41,13 @@
 \setlength{\parskip}{0pt}
 \sloppy
 \emergencystretch=2em
-\renewcommand{\arraystretch}{0.95}
-\setlength{\topskip}{6pt}
+\renewcommand{\arraystretch}{1.10}
+\setlength{\topskip}{15pt}
 
 \titleformat{\section}
   {\scshape\raggedright\normalsize\bfseries}
   {}{0em}{}[\color{black}\titlerule]
-\titlespacing{\section}{0pt}{2pt}{2pt}
+\titlespacing{\section}{0pt}{8pt}{5pt}
 
 \setlist[itemize]{leftmargin=*, itemsep=0pt, topsep=1pt, parsep=0pt, partopsep=0pt}
 \setlist[enumerate]{leftmargin=*, itemsep=0pt, topsep=1pt, parsep=0pt, partopsep=0pt}
@@ -108,7 +108,7 @@
 \end{center}
 
 \vspace{-1pt}
-{\small Software Developer with \textbf{4+ years} of experience in C++ application development, real-time systems, and scalable software solutions. Skilled in object-oriented design, multithreading, IPC, Linux-based development, and performance optimization across production environments.}
+{\small Software Developer with \textbf{4+ years} of experience building high-performance \textbf{C++ backend systems}, distributed services, and real-time data processing pipelines. Experienced in microservices, databases, Linux systems, concurrency, IPC, and performance optimization for production-critical applications.}
 \vspace{-1pt}
 
 % ----------- EXPERIENCE -----------
@@ -121,9 +121,9 @@
 
 \resumeItemListStart
 
-\resumeItem{Designed and implemented \textbf{AQURACY Server} in \textbf{C++} using \textbf{Crow REST API}, aggregating \textbf{frame-level computer vision data} at \textbf{25 FPS}, streaming to UI for corrections, caching in \textbf{Redis} until validated, then persisting to \textbf{MongoDB} for durable storage.}
+\resumeItem{Designed and implemented \textbf{AQURACY Server} in \textbf{C++} using \textbf{Crow REST APIs}, building scalable backend services that aggregate frame-level computer vision data at \textbf{25 FPS}, cache intermediate results in \textbf{Redis}, and persist validated data to \textbf{MongoDB} for reliable real-time production workflows.}
 
-\resumeItem{Built \textbf{AQURACY UI} using \textbf{ImGui} with unified \textbf{Player Tracking} and \textbf{Shot Tracker} modules, enabling operators to correct tracking errors and fire analytics stories (e.g., distance between players/fielders); reduced operators from \textbf{3 to 1--2} and improved tracking reliability by \textbf{40\%} in occlusion/overlap scenarios.}
+\resumeItem{Developed a modular real-time operator platform integrating \textbf{Player Tracking} and \textbf{Shot Tracker} workflows, enabling low-latency correction pipelines, reducing operational effort from \textbf{3 to 1--2} operators, and improving tracking reliability by \textbf{40\%} in production environments.}
 
 \resumeItem{Integrated \textbf{HyperView 2.0} (\textbf{Unreal Engine}) backend into the \textbf{V3 broadcast ecosystem} using \textbf{Python and FastAPI} to fire graphics stories to the \textbf{HyperView 2.0}. Successfully deployed during \textbf{IPL 2026}, delivering the system's USP: \textbf{real-time player tracking} embedded in graphics stories (e.g., six trajectories showing player's live location), enabling \textbf{25 FPS} real-time visualization rendering for production-critical broadcast overlays.}
 
@@ -149,11 +149,11 @@
 
 \resumeItem
 {\textbf{Electronic Paper Display (EPD) Management Platform}}
-{Developed backend services using Crow C++ and PostgreSQL to manage and monitor 100+ EPD devices. Contributed to a GTK-based desktop application enabling device configuration, content broadcasting, and real-time status monitoring.}
+{Developed backend services using Crow C++ and PostgreSQL to manage, monitor, and automate operations for 100+ EPD devices. Contributed to a GTK-based desktop application enabling device configuration, content broadcasting, and real-time device health monitoring.}
 
 \resumeItem
 {\textbf{Distributed Ticket Vending Machine (TVM) System}}
-{Developed backend components for a distributed ticket vending solution deployed across multiple metro environments. Built high-availability modules using C++, IPC, and OOP concepts, supporting multi-display operation, failover mechanisms, and concurrent payment processing.}
+{Developed backend components for a distributed ticket vending solution deployed across multiple metro environments. Built high-availability services using C++, IPC, and OOP principles, supporting failover mechanisms, concurrent transaction processing, and reliable system operation.}
 
 \resumeItemListEnd
 
@@ -164,17 +164,16 @@
 
 \resumeProjectHeading{{\textbf{LearnR}} $|$ \emph{HTML, CSS, JavaScript, AR.js}}{2022}
 \resumeItemListStart
-  \resumeItem{Co-developed an \textbf{Augmented Reality (AR)} learning platform using \textbf{marker-based AR detection}, rendering 3D models over physical markers in real-time via browser camera.}
-  \resumeItem{Built \textbf{four educational modules}—English (alphabets), Chemistry (molecules/bonds), Mathematics (shapes), Biology (body organs)—enabling interactive 3D visualization for immersive learning.}
-  \resumeItem{Implemented \textbf{AR.js} for marker tracking and 3D model rendering; engineered responsive UI with HTML/CSS/JS for cross-device compatibility.}
+\resumeItem{Developed an Augmented Reality learning platform using AR.js and marker-based detection to render interactive 3D educational content in the browser.}
+\resumeItem{Built modules covering English, Mathematics, Chemistry, and Biology with responsive cross-device UI support.}
 \resumeItemListEnd
 
 \resumeProjectHeading{{\textbf{Tuneology}} $|$ \emph{HTML, CSS, JavaScript, AR.js, Web Audio API}}{2022}
 \resumeItemListStart
-  \resumeItem{Built an \textbf{AR-powered music isolation tool} that detects visual markers via camera and overlays 3D instrument models, enabling interactive exploration of musical tracks.}
-  \resumeItem{Implemented \textbf{instrument stem isolation} using Web Audio API, allowing users to listen to individual instruments (guitar, drums, vocals, piano) from a mixed song.}
-  \resumeItem{Engineered \textbf{marker-based AR detection} with AR.js for real-time 3D rendering; designed responsive frontend with HTML/CSS/JS for seamless cross-browser experience.}
+\resumeItem{Built an AR-powered music learning application using AR.js and Web Audio API for interactive visualization and audio exploration.}
+\resumeItem{Implemented instrument isolation and real-time 3D rendering with a responsive web interface.}
 \resumeItemListEnd
+
 
 \resumeSubHeadingListEnd
 
@@ -185,9 +184,9 @@
     \item{
       \textbf{Languages}{: C++, Python, Shell Scripting} \\
 
-      \textbf{Core Concepts}{: Data Structures \& Algorithms, STL, OOPs, Design Patterns, Multithreading, Multiprocessing, IPC (Message Queues, Shared Memory), Race conditions, deadlocks, File system, Semaphores, Mutexes} \\
+      \textbf{Core Concepts}{: Data Structures \& Algorithms, STL, OOP, Design Patterns, Multithreading, Multiprocessing, Concurrency, IPC (Message Queues, Shared Memory), Semaphores, Mutexes, Distributed Systems, Performance Optimization} \\
 
-      \textbf{Technologies}{: Linux (Ubuntu, TinyCore), REST APIs, Microservices, FastAPI, Crow (C++), MongoDB, Redis, TCP/UDP, Socket programming, ZeroMQ, USB, Serial Communication, Docker, CI/CD (GitHub Actions)} \\
+      \textbf{Technologies}{: Linux (Ubuntu, TinyCore), REST APIs, Microservices, Distributed Systems, FastAPI, Crow (C++), MongoDB, Redis, PostgreSQL, TCP/UDP, Socket Programming, ZeroMQ, Docker, CI/CD (GitHub Actions), Logging, System Monitoring} \\
 
       \textbf{Tools \& Frameworks}{: Git, GDB, Valgrind, Makefiles, Meson, OpenGL, ImGui, OpenCV, GTK 3.0, Raspberry Pi}
     }
